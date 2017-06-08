@@ -3,7 +3,7 @@ $( _ =>{
 
   $(function() {
     var screenVal =$("input:text");
-
+    
     $("input:button").on("click",function(){
       var eachNumber =$(this).val();
       var currentScreen=screenVal.val();
@@ -13,6 +13,7 @@ $( _ =>{
         screenVal.val("");
       }
     });
+
     $("button").click(function(event){
       event.preventDefault();
       screenVal.val(eval(screenVal.val()));
